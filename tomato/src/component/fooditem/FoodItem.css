@@ -1,0 +1,41 @@
+.food-item {
+  width: 100%;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 15px;
+ 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 3s;
+    animation: fadeIn 3s;
+}
+.food-item img{
+  width: 100%;
+  
+    border-radius: 10px;
+   
+}
+.food-item-name-rating{
+ max-width: 50%;
+}
+.food-item-name-rating p{
+    font-size:20px;
+    font-weight: 500;
+}
+.food-item-name-rating desc{
+    font-size: 14px;
+    color: #747474;
+}
+.food-item-price{
+    font-size: 22px;
+    font-weight: 600px;
+    color: tomato;
+}
+
+/* small icon sizes for add/remove buttons */
+.food-item .add,
+.food-item .remove{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}

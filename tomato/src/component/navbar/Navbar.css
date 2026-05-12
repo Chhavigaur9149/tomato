@@ -1,0 +1,128 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.nav-menu{
+    display:flex;
+    gap: 20px;
+    color: #49557e;
+    list-style: none;
+
+}
+.nav-menu li{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-right{
+    display: flex;
+    gap: 40px;
+}
+.login-btn{
+    padding: 10px 20px;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    color: #49557e;
+    font-size: 16px;
+   
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: tomato;
+    color: white;
+    transition: all 0.3s ease;
+}
+.nav .active{
+  border-bottom: 2px solid tomato;
+  padding-bottom: 2px;
+}
+.navbar-profile{
+    position: relative;
+    cursor: pointer;
+}
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+  
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    list-style: none;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    outline: 2px solid white;
+    padding: 12px 25px;
+}
+.navbar-profile-dropdown li:hover{
+    color: #FF4C24;
+}
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+}
+.navbar-profile hr{
+    background-color: gray;
+    height: 1px;
+    border: none;
+}
+@media (max-width: 1050px) {
+    .navbar .logo {
+    width: 140px;
+    }
+    .nav-menu {
+   font-size: 18px;
+      gap: 20px;
+   
+    }
+    .nav-right {
+     gap: 30px;
+    }
+    .nav-right img{
+        width: 22px;
+    }
+    .navbar .login-btn {
+    padding: 8px 16px;
+  }}
+  @media (max-width: 900px) {
+    .navbar .logo {
+    width: 120px;
+    }
+    .nav-menu {
+   font-size: 14px;
+      gap: 10px;
+   
+    }
+    .nav-right {
+     gap: 20px;
+    }
+    .nav-right img{
+        width: 20px;
+    }
+    .navbar .login-btn {
+    padding: 7px 14px;
+    font-size: 15px;
+  }}
+    @media (max-width: 750px) {
+      
+        .nav-menu {
+            display: none;
+    
+     
+        }
+     
+    }

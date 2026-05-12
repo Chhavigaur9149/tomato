@@ -1,0 +1,143 @@
+.cart {
+  margin: 100px 0px;
+}
+
+.cart-items {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #49557e;
+  padding: 12px 0px;
+}
+
+.cart-items-title p {
+  margin: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 12px 0px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.cart-items-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item p {
+  margin: 0;
+  color: #49557e;
+  font-size: 14px;
+}
+
+.cart-item-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #e5533d;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    margin: 50px 20px;
+  }
+
+  .cart-items {
+    padding: 10px;
+  }
+
+  .cart-items-title {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    font-size: 12px;
+  }
+
+  .cart-item {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    padding: 8px 0px;
+  }
+
+  .cart-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-item p {
+    font-size: 12px;
+  }
+
+  .cart-item button {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
+.cart-payment {
+  width: 400px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+  
+}
+.cart-total-detail{
+  display: flex;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+.total-payment{
+  display: flex;
+  margin-top: 100px;
+
+  gap:500px;
+  
+  
+}
+.checkout-button{
+padding: 12px 0px;
+background-color: tomato;
+color: white;
+border: none;
+font-size: 18px;
+width: 200px;
+cursor: pointer;
+
+}
+.promo-code-input{
+  margin-top: 10px;
+  border-radius: 2px;
+
+
+}
+.promo-code-input button{
+  background-color: tomato;
+  border: none;
+  padding: 10px 0px;
+ width: 100px;
+
+}
+.promo-code-input input{
+  padding: 10px;
+
+}
