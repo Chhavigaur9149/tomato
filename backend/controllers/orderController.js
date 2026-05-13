@@ -14,7 +14,7 @@ const deliveryCharge = 2;
 
 
 const placeOrder = async (req, res) => {
-    const frontend_URL = "http://localhost:5173";
+    const frontend_URL = "https://tomato-qyhg.onrender.com/";
 
     try {
         const newOrder = new orderModel({
